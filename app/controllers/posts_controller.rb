@@ -7,6 +7,10 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+  def last_post
+    @post = Post.last
+  end
+
   # GET /posts/1
   # GET /posts/1.json
   def show
